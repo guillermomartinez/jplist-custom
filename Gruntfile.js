@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       css_min: {
         src: [
-          'core/jplist.core.min.css',
+          'css/jplist.core.min.css',
           'css/jplist.checkbox-dropdown.min.css',
           'css/jplist.pagination-bundle.min.css',
           'css/jplist.textbox-filter.min.css',
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       },
       js_min: {
         src: [
-          'core/jplist.core.min.js',
+          'js/jplist.core.min.js',
           'js/jplist.checkbox-dropdown.min.js',
           'js/jplist.pagination-bundle.min.js',
           'js/jplist.textbox-filter.min.js',

@@ -13,23 +13,25 @@
 	<!-- jPList core -->		
 	<!-- <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jplist/5.1.35/jplist.min.css"> -->
 	<!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jplist/5.1.35/jplist.min.js"></script> -->	
-	<!-- <link href="core/jplist.core.min.css" rel="stylesheet" type="text/css" />
-	<script src="core/jplist.core.min.js"></script>	
-
-	<link href="css/jplist.checkbox-dropdown.min.css" rel="stylesheet" type="text/css" />
-	<script src="js/jplist.checkbox-dropdown.min.js"></script>	
-
+	 <link href="css/jplist.core.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/jplist.core.min.js"></script>	
+	<!-- <script type="text/javascript" src="https://jplist.com/content/js/jplist/jplist.core.min.js"></script> -->
+	<!-- <script type="text/javascript" src="https://raw.githubusercontent.com/no81no/jplist/master/jplist-core/minified/jplist.core.min.js"></script> -->
 	<link href="css/jplist.pagination-bundle.min.css" rel="stylesheet" type="text/css" />
 	<script src="js/jplist.pagination-bundle.min.js"></script>	
+	<!-- <script type="text/javascript" src="https://jplist.com/content/js/jplist/jplist.pagination-bundle.min.js"></script> -->
+	<!-- <link href="css/jplist.checkbox-dropdown.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/jplist.checkbox-dropdown.min.js"></script>	 -->
 
-	<link href="css/jplist.textbox-filter.min.css" rel="stylesheet" type="text/css" />
+
+	<!--<link href="css/jplist.textbox-filter.min.css" rel="stylesheet" type="text/css" />
 	<script src="js/jplist.textbox-filter.min.js"></script>	
 	
 	<script src="js/jplist.sort-bundle.min.js"></script>	 -->
-	<link rel="stylesheet" type="text/css" href="css/jplist.custom.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/jplist.custom.min.css">
 	<script type="text/javascript" src="js/jplist.custom.min.js"></script>
 	<link href="css/jplist.filter-toggle-bundle.min.css" rel="stylesheet" type="text/css" />
-	<script src="js/jplist.filter-dropdown-bundle.min.js"></script>	
+	<script src="js/jplist.filter-dropdown-bundle.min.js"></script>	 -->
 
 	<script>
 		$('document').ready(function(){
@@ -64,7 +66,7 @@
 				<i class="fa fa-sort"></i>
 				jPList Actions
 			</div>
-			<div
+			<!-- <div
 				class="jplist-drop-down"
 				data-control-type="items-per-page-drop-down"
 				data-control-name="paging"
@@ -88,9 +90,9 @@
 					<li><span data-path=".star" data-order="asc" data-type="number">Estrellas asc</span></li>
 					<li><span data-path=".star" data-order="desc" data-type="number">Estrellas desc</span></li>
 				</ul>
-			</div>					
+			</div>		 -->			
 	<!-- checkbox dropdown -->
-		<div 
+		<!-- <div 
 			class="jplist-checkbox-dropdown"
 			data-control-type="checkbox-dropdown" 
 			data-control-name="category-checkbox-dropdown" 
@@ -120,13 +122,13 @@
 					<label for="lifestyle">Lifestyle</label>
 				</li>
 			</ul>
-		</div>	
+		</div>	 -->
 		<div class="text-filter-box">
 						<!--[if lt IE 10]>
 						<div class="jplist-label">Filtrar por Nombre:</div>
 						<![endif]-->
-						<input
-							data-path=".architecture"
+						<!-- <input
+							data-path="default"
 							type="text"
 							value=""
 							placeholder="Filtrar por Nombre"
@@ -141,7 +143,7 @@
 							data-control-action="filter">
 							<option data-path="default">Filtrar por estrellas:</option>
 							<option data-path=".architecture">architecture</option>
-						</select>
+						</select> -->
 					</div>
 
 		<!-- pagination control -->
@@ -157,13 +159,43 @@
 		data-control-type="pagination" 
 		data-control-name="paging" 
 		data-control-action="paging"
+		data-jump-to-start="false"
 		data-items-per-page="5">
 		</div>
-
+<!-- <div class="jplist-group" data-control-type="checkbox-group-filter" data-control-action="filter" data-control-name="themes">
+				   <input data-path=".architecture" id="architecture" type="checkbox" class="jplist-selected"> 			   
+				   <label for="architecture">Architecture</label>				   
+				   <input data-path=".christmas" id="christmas" type="checkbox" class="jplist-selected"> 					  
+				   <label for="christmas">Christmas</label>				   
+				   <input data-path=".nature" id="nature" type="checkbox"> 				   
+				   <label for="nature">Nature</label>				   
+				   <input data-path=".lifestyle" id="lifestyle" type="checkbox" class="jplist-selected"> 				   
+				   <label for="lifestyle">Lifestyle</label>
+				</div> -->
 </div>
 
 <!-- data -->   
 <div class="list box text-shadow">					
+	<!-- item 1 -->
+		<div class="list-item box">		
+		
+			<!-- img -->
+			<div class="img">
+				<img src="/content/img/thumbs/calendar-1.jpg" alt="" title=""/>
+			</div>
+			
+			<!-- data -->
+			<div class="block">
+				<p class="date">05/08/2003</p>
+				<p class="title">Calendar</p>
+				<p class="desc">A calendar is a system of organizing days for social, religious, commercial, or administrative purposes. This is done by giving names to periods of time, typically days, weeks, months, and years. The name given to each day is known as a date. Periods in a calendar (such as years and months) are usually, though not necessarily, synchronized with the cycle of the sun or the moon.</p>
+				<p class="theme">
+					<span class="other">Other</span>
+					<span class="group1">Group 1</span>
+				</p>
+				<p class="like">18 Likes</p>
+			</div>
+		</div>
 
 	<!-- item 2 -->
 	<div class="list-item box">					
